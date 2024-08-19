@@ -1,0 +1,66 @@
+
+Index     
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(135deg, #000, #f00, #00f);
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.container h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.container a {
+    display: block;
+    margin-bottom: 15px;
+    padding: 15px 25px;
+    background-color: #f00; /* Red background */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.container a:hover {
+    background-color: #000; /* Black background on hover */
+    color: #f00; /* Red text on hover */
+    transform: scale(1.05);
+}
+
+/* Optional: If you want a second link to have a different default color */
+.container a:nth-child(2) {
+    background-color: #000; /* Black background */
+    color: #f00; /* Red text */
+}
+
+.container a:nth-child(2):hover {
+    background-color: #f00; /* Red background on hover */
+    color: #000; /* Black text on hover */
+}
